@@ -14,7 +14,6 @@ class ParticipantesController extends Controller
     {
         $Participante = new Participante;
         $Participante =  $Participante::all();
-        $tipo =1;
         return  view("listagemParticipantes",['Participantes'=>$Participante ] );
     }
     /**
